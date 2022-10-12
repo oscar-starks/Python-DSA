@@ -1,0 +1,132 @@
+1.)To create a virtual envrionment:
+   You first open your command prompt, then type in the command:
+
+   python -m venv "virtual_environment_name"
+   
+   This "virtual_environment_name" can be any name of your choice, just like a variable name.You could type the "dir" to check if your virtual environment name
+   is present among the folders enlisted.To install your environment, you type in the following command:
+   
+   "virtual_environment_name"\Scripts\activate.bat
+
+   To know if your environment has been installed, the name you gave then appears right before your computer directories like this:
+
+   ("virtual_environment_name")C:\users\Oscar Blessed\Documents>
+
+    To install dependencies, simply use this command:
+
+    pip install "dependency_name"
+
+    You can simply django in this way:
+    
+    pip install django
+
+    You can type in "pip list" to show list of installed dependencies or packages which are in the virtual environment
+
+    To uninstall dependencies, simply use this command:
+
+    pip uninstall "dependency_name"
+
+   Finally, to leave a virtual environment, you simply type "deactivate" command and the environment gets deactivated and your computer directory will change to:
+   C:\users\Oscar Blessed\Documents>
+
+
+  How To Export a Project:
+  To export a directory, we first create a folder which we want to export the project to.
+  You MUST then create a .txt file called "requirements" where you put the name of the dependencies you used. You can get the correct names by using the "pip freeze"
+  command.This file is where the end user can install the dependencies from by using this command:
+
+  pip install -r requirements.txt
+
+  Remember that it's a must to name your .txt file this way
+ 
+  Finally, to delete a virtual environment, you use this command:
+  rmdir "virtual_environment_name" /s
+  This comand simply removes or deletes the diectory where this is stored. You can do this manually by just going to your file explorer and deleting the folder
+
+
+2.)Conditional statement:
+ This type of python code instructs the device to perform a task or tasks if a condition is met, or if multiple
+ conditions are met. E.g:
+
+our_num = 15
+#initializes a variable of type int with the value of 15
+
+if 16 > our_num:
+  # this conditional statement checks if 16 is greater than our "our_num" variable then performs the task below
+  print("Our number is less than 16")
+
+else:
+  # this conditional statement is automatically triggered if the above conditions are not met
+  print("Our number is less than 16")
+
+2.B) Iterative statement:
+  An iterative statement also known as looping or repetitve statements instruct our python code to continously perform an action so far a criteria is met. Iterations
+  can also be altered by using the "break" keyword or the "continue" keyword.E.g:
+
+  user_input = eval(input("How many times do you want to say 'hello word'? "))
+  counter = 1
+  
+  while counter <= user_input:
+  # Continously performs the task below so far the above conditions are true
+   print("Hello World")
+   counter += 1
+  # Prints that the task has been completed when the iteration is completed
+  print("Task Completed")
+
+2.C) Assignment statement:
+  This is a statement where a value is assigned to a certain variable. It is executed using the equal-to(=) sign.
+  NB: During assignment, the value to be assigned to a variable is always on the right hand of the equal-to sign
+  while the variable that now assumes the value will be on the left hand side of the equal-to sign. E.g:
+ 
+  my_number = 15
+
+  Here, the integer value of 15 is assigned to the variable "my_number"
+
+3) A variable which is declared inside a function is a local variable while any variable not declared inside a function
+  is global. A blobal variable can be accessed anywhere in the code whereas a local variable can only be accessed within
+  function it is declared.
+
+  Global Variable:
+
+  my_string = "I am a python programmer"
+  # initializing a global variable
+
+  def my_print_function(): 
+  # using a global variable inside a function
+    print(my_string)
+
+
+  my_print_function()
+  print(my_string)
+  # also using the global variable outside the function
+
+
+  Local variable:
+
+  def my_print_function(): 
+    my_string = "I am a python programmer"
+    # initializing and assigning values to a local variable
+    print(my_string)
+    # using the local variable only inside the function
+  
+  my_print_function()
+  #Calling the function which prints our local variable
+
+4) Synthax simply explains how the code is supposed to be arranged and all, talking about scope, functions, etc, while semantics
+   talk about the meaning of the code. For example, if we have a code such as:
+
+   my_num = 6
+   my_snum = 2
+   print(my_num/my_snum)
+   
+   This code should print out a value of 3.0 because semantically and synthax_wise, the code is correct.But if we have a code such as:
+
+   my_num = 6
+   my_string = 2
+   print(my_num/my_string)
+
+   This code is going to run into an error, because the semantics is wrong. You cannot divide an integer by a string, and this just shows that
+   a code could be arranged properly and written with correct synthax but the interpretation or the semantics could be wrong
+   
+   Basically, one difference between synthax error and semantic error is that synthax-wise, a code could be correct, buh semantically,
+   the code is actually wrong

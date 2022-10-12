@@ -1,0 +1,284 @@
+*Kodecamp Day 1
+*Python IDLE and Interpreter
+*Python Interactive shell
+*eval()
+*input()
+
+22nd March 2022
+*If you're done using the command line in writing a python code and you want to leave, you can do
+ it by using the "exit()" function
+*The "type()" function is used when you've stored a variable in python and you want to check the variable type
+*You can unpack data in your python. For example, you can store an array of data and later assign them to individual variables.
+eg; goat = {"goat", "cow"}
+    x, y = goat
+
+*If you want to change the value of a global variable inside a function, you have to first use the keyword "global"
+which automatically let's the compiler know that you'll be using the global variable
+*For tomorrow, we dealing on python data types
+
+*If elif and else
+
+25th March 2022
+*So we have list, tuple, range, dict, set, frozenset, bytes, bytearray, memoryview
+*Python data types are grouped into
+-Numeric
+-Dictionary
+-Set
+-Boolean
+-Sequence type
+g++ string.cpp -o string.exe
+
+28th March 2022
+*Note that lists are enclosed with "[]", tuples are enclosed with '()' and 
+sets are enclosed with '{}' as well as dictionaries
+*Understand for loops in Python
+*len() is used in checking the length of strings in Python
+*random.randrange() is used to generate random numbers within a certain range and it is used after importing the 
+random module
+*"for" and "in" are used when you want to loop the characters of a string
+*"in" is equally used to check, it could serve as a boolean
+*".lower" and ".upper" is used to modify texts by setting them to upper and lower case
+*".strip" is used to remove whitespace from the beginning or end of a string.
+*".replace()" is used to replace a character with another in a string
+
+4th April 2022
+*Continue statement
+*break
+*range()- is used to set a range in variables and all
+*Use the pass statement when you want to just "pass" a function, best explanation to give, lol, or you could say, when you
+wanna ignore something
+*Lambda- This is used to assign a function value to a variable and it goes in this sequence;
+ trial = lambda a, b, c: a * b * c
+ print(trial(2,3,4))
+*Note that .pop() takes out the last component of a list, it can also take the index of the component, e.g; .pop(9).
+ But when using the .remove(), it uses a direct approach and not indexes, e.g; .remove("goat") and it removes the first result 
+ of the search
+*.count() is used to count the amount of times apiece of data repeats itself in a list, e.g; .count("goat")
+
+6th April 2022
+*.insert(index, "vslue")- what this does is that you can insert a value into a list at the index which is specified
+*del() is used to delete an item inside a list by just simply specifying the index
+*.split() is used to change a string to a list... It just simply takes each individual of the string and put it as one content of a list.You can also indicate where 
+you want it to divide by including it in the bracket for argument: e.g ; goat.split("-")
+
+7th April 2022
+*id() is used to check the memory address of a variable
+
+8th April 2022
+*.title() is used to make the first characters of strings to be in uppercase
+*iter() is used to declare an item which is to be iterated through while next() is used to iterate through the variable which has been declared to be iterated through
+For example: goat = iter(iter_val)
+
+*datetime() can be used to check date and time in python by first iumporting the datetime module and to check the time at that instance, you will need to import
+the datetime module then use this syntax "datetime.datetime.now()"
+*min(), max() and abs()
+*If you have a JSON string, you can parse it by using the json.loads() method.
+*If you have a Python object, you can convert it into a JSON string by using the json.dumps() method.
+
+*Use the indent parameter to define the numbers of indents:
+json.dumps(x, indent=4)
+
+*The open() function takes two parameters; filename, and mode.
+
+There are four different methods (modes) for opening a file:
+
+"r" - Read - Default value. Opens a file for reading, error if the file does not exist
+
+"a" - Append - Opens a file for appending, creates the file if it does not exist
+
+"w" - Write - Opens a file for writing, creates the file if it does not exist
+
+"x" - Create - Creates the specified file, returns an error if the file exists
+
+In addition you can specify if the file should be handled as binary or text mode
+
+"t" - Text - Default value. Text mode
+
+"b" - Binary - Binary mode (e.g. images)
+
+11th April 2022
+*".keys()" is used to get the keys in a dictionary while ".get()" can simply be used to address the keys apart from
+using the key directly, ".values()" is used to get all the values inside a dictionary
+*".update()" an be used to change values in dictionaries
+ e.g: my_dictionary.update({"key":"value"})
+
+16th April 2022
+*we can get the length of dictionaries by using the len() function;
+ e.g:len(my_dictionary)
+*you can also use the .get() function which will items from the dictionary
+ e.g:print(my_dictionary.get("one"))
+*the ".pop()" ia used in dictionariea too to remove the last item while the ".popitem()" is used to remove the last
+ added item
+*the ".clear()" is used to remove everything from a dictionary
+
+18th April 2022
+*the "del" keyword can be used to delete attributes in classes, e.g: del class.property
+*you can even use the "del" keyword to delete a whose object of a class, e.g: del instance
+*Inheritance in OOP
+*Recursion in python
+
+23rd April 2022
+* You can use the "help" keyword in with in_built modules in order to check how it is used, e.g: print(help(randInt)).
+*You could use the "dir" keyword to get the contents of a module, e.g: print(dir(mymodule)).
+*You could just access strings by just referring to their index, e.g: print("Hello"[3]) 
+*You could use the "round" function to round numbers to the nearest whole numbers, you can equally specify the decimal
+places of the rounded figures,e.g: round(5/2, 2)_this sepcifies that it should round the figure to 2 decimal places
+*You can do floor division in python bys using "//" instead of "/". This returns the floor value of the division
+*"{:.2f}".format() can be used to format strings to have two decimal places, no ask me how, I still dey learn am
+
+25th April 2022
+* try and except keywords
+
+27th April 2022
+* ".random()" can be used to generate random numbers between 0 - 0.99999999
+
+28th April 2022
+*You can shuffle the contents of a list by using "random.shuffle(list)"
+
+10th May 2022
+*Polymorphism and Encapsulation
+
+11th May 2022
+*if not type(x) is int:
+  raise TypeError("Only integers are allowed")
+ That is an example of raising exceptions.
+
+*[::-1] can be used to reverse strings. E.g: 
+ txt = "goat"[::-1]
+
+*Django uses the model view template(MVT) design structure, the model which deals with the database uses the Object 
+ relational mapping(ORM)techniques to get data. Structured Query Language(SQL) is used mainly with python database
+
+ https://us02web.zoom.us/j/86585102315?pwd=YWxqWUkxbGRZVkQ0aDZRWFVWY1FGZz09 _ Link for python class
+ https://www.electronx.ca/education/dc-circuits/ _Link for DC textbook
+
+11th May 2022
+*Routing and applicattion in Django
+
+13th May 2022
+*Class based views and function based views
+
+17th May 2022
+
+*templates are HTML files in python, template tags are simple functions that enable writing python codes inside the html code
+*static files are other files apart from HTML
+
+*template = loader.get_template('homepage\page.html')
+    return HttpResponse(template.render())
+ The above code is a way to import an HTML code into your Django project. There are other ways though such as the code below:
+return render(request, "homepage.html")
+
+*Web server gateway interface - WSGI 
+ Asynchronous Server Gateway Interface-ASGI
+
+*24th May 2022
+Interpolation
+Dynamic data
+
+*28th May 2022
+Block tag
+Static Tag
+Extends tag
+URL tag
+
+*1st June 2022
+(name of database table).objects.all(): this shows all the objects in the table
+
+To add something to a table in the database, you can simply create an instance and then add those things
+in form of a constructor:
+post1 = (name of table)(name = "mine", content = "content")
+post1.name: this command will show you the name of the table which you just added and all..
+post1.save(): this saves the new entry to the table
+
+(nameoftable).objects.all(): this shows the contents of that table
+
+.Query set in Django.. Chaining of filters.... Inserting filters
+
+*2nd June 2022
+Relationships in Django database.
+Many to one relationships in Django
+You can add a new "relationship" from the admin site in Django
+
+*3rd June
+<b> Tag in html
+
+*8th June 2022
+You can equally access items in a queryset by index. For example;
+(class name).objects.all{}[index]. Just like using arrays and all, the indexing works that way too
+Note: This works differently from the primary key object where you do something like (objectname).objects.get(pk=1)
+You can also access other contents for example, if our database table had a row called "author", we can simply get it by saying
+(objectname).objects.all()[index].author
+.Validators in django
+.You can also create new entries by using the (instancename).objects.create() and inside the create contructor, you then provide
+ your field data
+.You can also use (instancename).objects.filter() and this returns all the tables that match the search data you had given in the
+ constructor and returns it in form of a queryset.
+.If we are dealing with integer types in our database table and we want to check if the integer value is lower than a specific value, 
+we can simply use the "__lt = ournumber" to check or "__lte" for lower than or equal to
+E.g = (instancename).objects.filter(counter__lte=4). THis will automatically return a queryset containing all the tables whose counters are lower than
+or equal to 4
+
+9th June 2022
+*You could use an "or" condition in your ORM for filtering using the "Q()" constructor. This checks if the condition or another condition 
+is met. E.g 
+>> from django.db.models import Q
+>>(instancename).objects.filter(Q(counter__lte=4) | Q(author = "Best Seller"))
+
+25th June 2022;
+
+you can get a list of all the variables in a class in ORM by selecting the items using the name of the row in the table. E.G:
+
+> Fruit.objects.values_list('name', flat=True)
+ this automatically gives a list containing the values of the row "name" in the 'FRUIT" object
+
+values()
+Returns a QuerySet that returns dictionaries, rather than model instances, when used as an iterable.
+
+values_list()
+Returns a QuerySet that returns list of tuples, rather than model instances, when used as an iterable.
+
+distinct()
+distinct are used to eliminate the duplicate elements.
+
+print(User.objects.all().values()) # Return all fields
+# <QuerySet [{'id': 1, 'name': 'John'}, {'id': 2, 'name': 'Tom'}]>
+
+print(User.objects.all().values_list()) # Return all fields
+# <QuerySet [(1, 'John'), (2, 'Tom')]>
+
+print(User.objects.all().values_list(flat=True)) # Return "id" field
+# <QuerySet [1, 2]>
+
+print(User.objects.all().values_list("name", flat=True)) # Return "name" field
+# <QuerySet ['John', 'Tom']>
+
+print(User.objects.all().values_list(flat=True, "name")) # Error
+
+print(User.objects.all().values_list("id", "name", flat=True)) # Error
+
+26th June 2022
+-recursive relationships
+
+27th June 2022
+*Path converters
+*Registering of converters
+*Repath rather than path- regular expressions in paths
+
+30th June 2022
+*RS 232
+*RS 485
+*RTOS
+ In django:
+TLS(Transport Layer Security)
+SMTP(Simple Mail Transfer Protocol)
+
+12th july 2022
+endpoints in api
+consuming api
+json to python conversion
+status codes
+
+13th july 2022
+serializers
+database with api
+model_to_dict
