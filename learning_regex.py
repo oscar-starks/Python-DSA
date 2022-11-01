@@ -94,7 +94,7 @@ print(alpharegex.findall("this is A TEST"))
 
 # this checks that characters within a range should not be returned in your expression using '^'
 alpharegex = re.compile(r"[^A-Z^\s]")
-trythis = re.compile(r"[#$%^&*]")
+trythis = re.compile(r"[@#$%^&*()_+-=]")
 print(trythis.findall("this is A TEST $%^"))
 print(alpharegex.findall("this is A TEST $%^"))
 
