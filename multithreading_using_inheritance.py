@@ -1,6 +1,10 @@
 import threading
 from threading import Thread
 
+""" this is just a simple example of implementing threading using 
+    inheritance
+"""
+
 class count(Thread):
     def __init__(self, name, num) -> None:
         super(count, self).__init__()
