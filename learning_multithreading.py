@@ -1,19 +1,19 @@
 from threading import Thread, current_thread
 import time
 
-def calcsqr(num):
+def calcsqr(num : int) -> int:
     for i in num:
         time.sleep(0.2)
         print(current_thread().getName())
         print(f"the square of {i} is {i**2}\n")
         
-def calccube(num):
+def calccube(num : int) -> int:
     for i in num:
         time.sleep(0.2)
         print(current_thread().getName())
         print(f"the cube of {i} is {i**3}\n")
         
-def daemon():
+def daemon() -> None:
     while True:
         time.sleep(0.2)
         print("this is a daemon thread!")
