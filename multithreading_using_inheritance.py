@@ -6,7 +6,7 @@ from threading import Thread
 """
 
 class count(Thread):
-    def __init__(self, name, num) -> None:
+    def __init__(self, name:str, num:int) -> None:
         super(count, self).__init__()
         self.num  = num
         self.name = name
@@ -16,6 +16,6 @@ class count(Thread):
         name = self.name
         print(num, name, threading.current_thread().name)
 
-t1 = count("sdfds", 5)
+t1 = count("thread name", 5)
 
 t1.start()
