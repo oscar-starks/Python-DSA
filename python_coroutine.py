@@ -12,7 +12,7 @@ def print_name(prefix):
 		print("Coutine closed!!")
 
 corou = print_name("Dear")
-# corou.__next__()
+corou.__next__()
 corou.send("Atul")
 corou.send("Dear Atul")
 corou.close()
